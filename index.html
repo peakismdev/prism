@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism - GTag fan game resources</title>
+    <link rel="stylesheet" href="src/css/globalStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="assets/logo.png" class="logo" id="logo">
+                <span class="logopopo">PRISM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#team">Team</a></li>
+                <li class="dropdown" id="releasesDropdown">
+                    <a href="#" class="dropdown-toggle">Releases <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="releasesDropdownMenu">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </li>
+                <li><a href="/#license">License</a></li>
+            </ul>
+            <div class="settings-container">
+                <button class="settings-button" id="settingsBtn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="settings-menu" id="settingsMenu">
+                    <div class="settings-item style-selector">
+                        <label for="styleSelect">Theme:</label>
+                        <select id="styleSelect" class="style-select">
+                            <option value="src/css/globalStyle.css">Default</option>
+                            <option value="Style_Test_V3.css">Style_Testing_3</option>
+                        </select>
+                    </div>
+                    <div class="settings-divider"></div>
+                    <button class="settings-item logout-btn" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">PRISM</h1>
+                <p class="hero-subtitle">Gorilla tag fan games Ultimate Resources</p>
+                <p class="hero-description">Amazing C#, HLSL Developers, Modelers, and Musicians</p>
+                <button class="glass-button" id="joinBtn">Join Our Discord</button>
+            </div>
+        </section>
+
+        <section class="content-section" id="services">
+            <div class="glass-card">
+                <h2>What We Do</h2>
+                <p>We create amazing and professional resources, mostly for free (with occasional paid releases). We
+                    value our community and the user-friendliness of our resources. Our work includes professional
+                    scripts, shaders, models, and music.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3>C# Scripts</h3>
+                        <p>We create fully set-up packages with amazing examples. Our scripts are high-quality and easy
+                            to use.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>HLSL Shaders</h3>
+                        <p>We create amazing high-quality shaders that are user-friendly and optimized for VR.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Models</h3>
+                        <p>High-quality though optimize models that are perfect to use and ready to go (most of the
+                            times with textures)</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Music & SFX</h3>
+                        <p>Music that is perfect for most games with diffrent styles. Our soundeffects are high qulity
+                            too.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="team">
+            <div class="glass-card">
+                <h2>Our Team</h2>
+                <p>Meet the contributers of Prism.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="assets/Team/keo.png" class="avatar-img">
+                        </div>
+                        <h3>Keo.CS</h3>
+                        <p class="member-role">C# & HLSL developer and music producer</p>
+                        <p class="member-bio">I Specialize on coding in C# and I am trying to get better at shaders and
+                            occasionaly make music.</p>
+                        <div class="member-socials">
+                            <a href="#" class="social-link" data-platform="discord-server" title="Discord Server">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="discord-user" title="Discord User">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="github" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="website" title="Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="youtube" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="coffee" title="Buy Me a Coffee">
+                                <i class="fas fa-coffee"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="assets/Team/peaceful.png" class="avatar-img">
+                        </div>
+                        <h3>Peac3fu1</h3>
+                        <p class="member-role">Programmer and modeler & music producer</p>
+                        <p class="member-bio">Im a multi language programmer that also makes music & a 3D/2D Artist.</p>
+                        <div class="member-socials">
+                            <a href="#" class="social-link" data-platform="discord-server" title="Discord Server">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="discord-user" title="Discord User">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="github" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="website" title="Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="youtube" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="coffee" title="Buy Me a Coffee">
+                                <i class="fas fa-coffee"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="releases">
+            <div class="glass-card">
+                <h2>Releases</h2>
+                <p>All of our free to use Packages made by the Prism Team!</p>
+                <div id="releases-folder-tree" class="folder-tree"></div>
+            </div>
+        </section>
+
+        <section class="content-section" id="license">
+            <div class="glass-card license-card">
+                <h2>License</h2>
+                <div class="license-content">
+                    <div class="license-header">
+                        <p class="license-title">Prism License Â© 2025</p>
+                    </div>
+                    <div class="license-body">
+                        <p class="license-intro">These scripts were created by the Prism Development Team. Our
+                            developers can be found
+                            <a href="#team" class="license-link">here</a>
+                        </p>
+
+                        <div class="license-terms">
+                            <div class="license-term">
+                                <h4>Terms of Use</h4>
+                                <p>Scripts may be used and modified for projects or personal use without restriction.
+                                </p>
+                            </div>
+                            <div class="license-term">
+                                <h4>Restrictions</h4>
+                                <p>Redistributing, selling, or claiming these scripts as your own is prohibited. The
+                                    file's credits for "Prism" and the listed developers must be preserved. It is
+                                    strictly forbidden to distribute or resell without authorization.</p>
+                            </div>
+                            <div class="license-term">
+                                <h4>Scope</h4>
+                                <p>This license applies to all Prism scripts unless stated otherwise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Prism. Ultimate GTag fan game resources.</p>
+    </footer>
+
+    <script src="src/js/auth.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/settings.js"></script>
+    <script src="src/js/releases.js"></script>
+</body>
+
+</html>
